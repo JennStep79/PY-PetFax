@@ -1,0 +1,53 @@
+* {
+    background-color: bisque;
+    text-align: center;
+}
+
+h1 {
+    color:#7FA4AD;
+    text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+}
+
+h2 {
+    color:mediumorchid;
+}
+
+img {
+    border-radius: 45%;
+    width: 30%;
+    height: 30%;
+}
+
+input, textarea {
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border: none;
+    width: 10%;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    background-color: mediumblue;
+    padding: 0.5em;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.add-fact {
+    padding-top: 2em;
+}
+
+a:hover {
+    color: blue;
+}
+
+.back {
+    padding-top: 20px;
+}

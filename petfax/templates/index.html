@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFax</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to PetFax!</h1>
+    {% for pet in pets %}
+        <h2>{{ pet.pet_name }}</h2>
+        <img width="300" src="{{ pet.pet_photo }}" alt="{{pet.pet_name}}">
+        <div>
+            <a href="/pets/{{ pet.pet_id }}"> Learn more about this pet</a>
+        </div>
+    {% endfor %}
+    <div class="add-fact">
+        <a href="/facts/new"> Do you have an interesting pet fact? Submit it here.</a>
+    </div>
+</body>
+</html>
